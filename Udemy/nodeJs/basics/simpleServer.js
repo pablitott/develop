@@ -33,7 +33,7 @@ http.createServer(function(req, res){
     fileStream.pipe(res);  
   }else if(stats.isDirectory()){
     res.writeHead(302, {
-      'Location': 'inex.html'
+      'Location': 'index.html'
     });
     res.end;
   }else{
